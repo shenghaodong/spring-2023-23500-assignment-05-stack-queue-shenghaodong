@@ -10,7 +10,7 @@
 class stack{
     private:
     Node *head;
-    int topIndex;
+    int topIndex = 0; //topIndex of 0 means that there is nothing in the stack
   
 
     public:

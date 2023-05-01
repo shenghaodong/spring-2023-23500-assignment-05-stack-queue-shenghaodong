@@ -3,7 +3,7 @@
 #include "node.h"
 
 //Change all these to work with nodes
-void stack::push(std::string item){
+void stack::push(std::string item){//Need to determine max size
     if (topIndex >= 5){//Change this number don't hard code it in
         throw STACK_ERR_FULL;
     }
@@ -14,7 +14,7 @@ void stack::push(std::string item){
     topIndex++;
 }
 
-int stack::pop(){
+int stack::pop(){//Finish this not done
     if (topIndex <= 0){
         throw STACK_ERR_EMPTY;
     }
@@ -25,7 +25,7 @@ int stack::pop(){
     return tmp;
 }
 
-int stack::top(){
+int stack::top(){//Done I think
     if (topIndex <= 0){
     throw STACK_ERR_EMPTY;
     }
@@ -34,7 +34,7 @@ int stack::top(){
     //return a[topIndex-1];
 }
 
-bool stack::is_empty(){
+bool stack::is_empty(){//Not sure if it works
 
     return topIndex==0;
 }
