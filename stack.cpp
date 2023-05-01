@@ -7,11 +7,18 @@ void stack::push(std::string item){//Need to determine max size
     if (topIndex >= 5){//Change this number don't hard code it in
         throw STACK_ERR_FULL;
     }
+    // Node *trailer = nullptr;
+    // Node *nextNode = new Node(item);
+    // while(head  != nullptr){
+        
+    // }
 
-    Node *nextNode = new Node(item);
-    head -> setNext(nextNode);
-    //a[topIndex] = item;
-    topIndex++;
+    // head -> setNext(nextNode);
+    // //a[topIndex] = item;
+    // topIndex++;
+    Node *tmp = new Node(item);
+    tmp->setNext(head);
+    head = tmp;
 }
 
 int stack::pop(){//Finish this not done
