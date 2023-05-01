@@ -12,7 +12,7 @@ class stack{
     Node *head;
     int topIndex = 0; //topIndex of 0 means that there is nothing in the stack
   
-
+    
     public:
     void push(std::string); // add an item to the top
     int pop(); // remove and return an item from the top of the stack
