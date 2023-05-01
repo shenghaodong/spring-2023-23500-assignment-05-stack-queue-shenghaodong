@@ -4,34 +4,35 @@
 
 //Change all these to work with nodes
 void stack::push(int item){
-    if (topindex >= 5){
+    if (topIndex >= 5){
         throw STACK_ERR_FULL;
     }
 
     head.setNext() -> item;
-    //a[topindex] = item;
-    topindex++;
+    //a[topIndex] = item;
+    topIndex++;
 }
 
 int stack::pop(){
-    if (topindex <= 0){
+    if (topIndex <= 0){
         throw STACK_ERR_EMPTY;
     }
 
-    int tmp = a[topindex-1];
-    topindex--;
+    int tmp = a[topIndex-1];
+    topIndex--;
     return tmp;
 }
 
 int stack::top(){
-    if (topindex <= 0){
+    if (topIndex <= 0){
     throw STACK_ERR_EMPTY;
     }
 
-    return a[topindex-1];
+    return head.getNext();
+    //return a[topIndex-1];
 }
 
 bool stack::is_empty(){
-    
-    return topindex==0;
+
+    return topIndex==0;
 }
