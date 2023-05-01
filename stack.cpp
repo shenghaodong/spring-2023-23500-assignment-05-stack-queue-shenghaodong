@@ -1,4 +1,6 @@
 #include "stack.h"
+#include <iostream>
+#include "node.h"
 
 void stack::push(int item){
     if (topindex >= 5){

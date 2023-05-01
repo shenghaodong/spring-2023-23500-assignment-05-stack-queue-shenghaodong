@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Node.h"
+#include "node.h"
 #include "lists.h"
 
 List::List(){

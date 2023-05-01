@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+#include "node.h"
 class stack{
     private:
     Node *head;

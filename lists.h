@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "Node.h"
+#include "node.h"
 
 class List{
  private:
