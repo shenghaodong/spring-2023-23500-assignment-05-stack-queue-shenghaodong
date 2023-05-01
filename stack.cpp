@@ -7,15 +7,7 @@ void stack::push(std::string item){//Need to determine max size
     if (topIndex >= 5){//Change this number don't hard code it in
         throw STACK_ERR_FULL;
     }
-    // Node *trailer = nullptr;
-    // Node *nextNode = new Node(item);
-    // while(head  != nullptr){
-        
-    // }
 
-    // head -> setNext(nextNode);
-    // //a[topIndex] = item;
-    // topIndex++;
     Node *tmp = new Node(item);
     tmp->setNext(head);
     head = tmp;
@@ -49,3 +41,14 @@ bool stack::is_empty(){//Not sure if it works
 
     //return topIndex==0;
 }
+
+    //Old code for push
+    // Node *trailer = nullptr;
+    // Node *nextNode = new Node(item);
+    // while(head  != nullptr){
+        
+    // }
+
+    // head -> setNext(nextNode);
+    // //a[topIndex] = item;
+    // topIndex++;
