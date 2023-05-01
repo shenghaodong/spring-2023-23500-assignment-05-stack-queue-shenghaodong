@@ -42,6 +42,10 @@ int stack::top(){//Done I think
 }
 
 bool stack::is_empty(){//Not sure if it works
+    if(head == nullptr){
+        return 0;
+    }
+    return 1;
 
-    return topIndex==0;
+    //return topIndex==0;
 }
