@@ -2,12 +2,14 @@
 #include <iostream>
 #include "node.h"
 
+//Change all these to work with nodes
 void stack::push(int item){
     if (topindex >= 5){
         throw STACK_ERR_FULL;
     }
 
-    a[topindex] = item;
+    head.setNext() -> item;
+    //a[topindex] = item;
     topindex++;
 }
 
@@ -30,5 +32,6 @@ int stack::top(){
 }
 
 bool stack::is_empty(){
+    
     return topindex==0;
 }
