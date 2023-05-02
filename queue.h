@@ -9,11 +9,14 @@ Your class must implement the following functionality:
 */
 #pragma once
 #include <iostream>
+#define QUEUE_ERR_EMPTY 1
+#define QUEUE_ERR_FULL 2
+#define QUEUE_ERR_OTHER 4
 
 class queue{
     private:
     int maxSize = 10;
-    int arr[maxSize];
+    int arr[10];
     int head;
     int tail;
   

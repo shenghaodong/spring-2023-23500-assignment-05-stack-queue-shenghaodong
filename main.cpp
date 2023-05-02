@@ -1,6 +1,7 @@
 #include <iostream>
 #include "node.h"
 #include "stack.h"
+#include "queue.h"
 
 int main(){
     stack *test = new stack;
@@ -12,9 +13,11 @@ int main(){
     test -> push("5");
     test -> push("2");
     test -> push("1");
-    test -> toString();
+    std::string stackString = test -> toString();
+    std::cout << stackString << "\n";
     std::cout << test -> pop() << "\n";
-    test -> toString();
+    stackString = test -> toString();
+    std::cout << stackString << "\n";
     std::cout << test -> top() << "\n";
     std::cout << "Is this stack empty: " << test -> is_empty() << "\n";
     int arr[5];

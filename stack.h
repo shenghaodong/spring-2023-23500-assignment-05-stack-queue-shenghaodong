@@ -22,7 +22,7 @@ class stack{
     bool is_empty(); // returns true if stack is empty
     void remove(int loc);
     void insert(int loc, std::string data);
-    void toString();
+    std::string toString();
     std::string get(int loc);
 
     

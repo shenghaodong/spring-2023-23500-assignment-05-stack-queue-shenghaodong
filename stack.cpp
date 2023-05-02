@@ -51,9 +51,9 @@ std::string stack::top(){
 //Works
 bool stack::is_empty(){
     if(head == nullptr){
-        return 0;
+        return true;
     }
-    return 1;
+    return false;
 }
 
 
@@ -110,7 +110,7 @@ void stack::insert(int loc, std::string data){
   }
 }
 
-void stack::toString(){
+std::string stack::toString(){
   Node *tmp = this->head;
   std::string result = "";
   while (tmp != nullptr){
@@ -119,7 +119,7 @@ void stack::toString(){
     tmp = tmp->getNext();
   }
   result = result + "nullptr";
-  std::cout << result << "\n";
+  return result;
 }
 
 std::string stack::get(int loc){
