@@ -12,12 +12,14 @@ Your class must implement the following functionality:
 
 class queue{
     private:
-    int arr[10];
+    int maxSize = 10;
+    int arr[maxSize];
     int head;
     int tail;
   
     
     public:
+    queue();
     void enqueue(int item);
     int dequeue();
     int front();

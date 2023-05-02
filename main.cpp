@@ -17,5 +17,6 @@ int main(){
     test -> toString();
     std::cout << test -> top() << "\n";
     std::cout << "Is this stack empty: " << test -> is_empty() << "\n";
+    int arr[5];
     return 0;
 }
